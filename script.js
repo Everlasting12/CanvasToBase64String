@@ -37,7 +37,7 @@ function draw(e) {
 
   ctx.lineWidth = 5;
   ctx.lineCap = 'round';
-  ctx.strokeStyle = '#c0392b';
+  ctx.strokeStyle = '#000000';
 
   ctx.moveTo(pos.x, pos.y); // from
   setPosition(e);
