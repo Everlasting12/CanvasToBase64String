@@ -4,8 +4,7 @@ div{
 }
 
 canvas{
-  margin:0px 10px;
-  width:90%;
-  height:90vh;
+  width:50%;
+  height:40vh;
   border:2px solid black;
 }
