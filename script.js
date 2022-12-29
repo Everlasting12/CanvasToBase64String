@@ -4,7 +4,7 @@ document.body.appendChild(canvas);
 // some hotfixes... ( ≖_≖)
 
 // canvas.style.position = 'fixed';
-canvas.style.cssText = "margin:10px;border:3px solid blue;";
+canvas.style.cssText = "margin:10px;border:3px solid yellow;";
 
 // get canvas 2D context and set him correct size
 var ctx = canvas.getContext('2d');
