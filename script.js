@@ -4,7 +4,7 @@ document.body.appendChild(canvas);
 // some hotfixes... ( ≖_≖)
 
 // canvas.style.position = 'fixed';
-canvas.style.cssText = "margin:10px;width:100%; height:600px;border:3px solid blue;";
+canvas.style.cssText = "margin:10px;border:3px solid blue;";
 
 // get canvas 2D context and set him correct size
 var ctx = canvas.getContext('2d');
@@ -13,7 +13,7 @@ resize();
 // last known position
 var pos = { x: 0, y: 0 };
 
-// window.addEventListener('resize', resize);
+window.addEventListener('resize', resize);
 document.addEventListener('mousemove', draw);
 document.addEventListener('mousedown', setPosition);
 document.addEventListener('mouseenter', setPosition);
@@ -25,10 +25,10 @@ function setPosition(e) {
 }
 
 // resize canvas
-// function resize() {
-//   ctx.canvas.width = window.innerWidth;
-//   ctx.canvas.height = window.innerHeight;
-// }
+function resize() {
+  ctx.canvas.width = window.innerWidth;
+  ctx.canvas.height = window.innerHeight;
+}
 
 function draw(e) {
   // mouse left button must be pressed
@@ -56,7 +56,7 @@ btn.addEventListener("click", function(){
   txtarea.value = str[1] ;
 })
 reset.addEventListener("click", function(){
-  // resize()
+  resize()
 })
 
 
